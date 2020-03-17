@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<?php
+    //db handshaking
+
+// $servername = "localhost:6003";
+// $username = "root";
+// $password = "root";
+// $dbname = "ds";
+
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+// //Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// } 
+// echo "Connected successfully";
+
+
+// try {
+//     $conn1 = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//     // set the PDO error mode to exception
+//     $conn1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+//     $stmt = $conn1->prepare("INSERT INTO data() VALUES (:vuid, :vpid, :vpname, :vqty, :vucost, :vsubt)");
+//     $stmt->bindParam(':vuid', $uid1); //userid
+//     $stmt->bindParam(':vpid', $upid1); //productid
+//     $stmt->bindParam(':vpname', $upname1); //productname
+//     $stmt->bindParam(':vqty', $uqty1); //qtyordered
+//     $stmt->bindParam(':vucost', $ucost1); //unitcost
+//     $stmt->bindParam(':vsubt', $ustot1); //subtotal
+
+
+//     // insert a row
+//     $uid1 = $_SESSION['uid'];
+//     $upid1 = $tempitem['pid'];
+//     $upname1 = $tempitem['pname'];
+//     $uqty1 = $howmany;
+//     $ucost1 = $temppcst;
+//     $ustot1 = $subt;
+//     $stmt->execute();
+
+// }
+// catch(PDOException $e)
+// {
+//     echo "Error: " . $e->getMessage();
+// }
+
+?>
+
+</head>
+<body>
+
+
+
+<div>
+<table size = 60% border = '1' id = demo>
+        <tr>
+            <td>Master Incident Number</td>
+            <td>Incident Type</td>
+            <td>Repsonse Date</td>
+            <td>Last Update</td>
+            <td>location</td>
+            <td>Media Message</td>
+        </tr>
+
+    
+    <script>
+        // var xmlhttp = new XMLHttpRequest();
+        // txt="";
+        // var x;
+        // x = 0;
+        
+        // xmlhttp.onreadystatechange = function () {
+        //     if (this.readyState == 4 && this.status ==200){ 
+        //         myObj = JSON.parse(this.responseText);
+        //         var i;
+        //         for (i = 0; i < 20 ; i++) {
+        //             txt += "<tr><td> Incident Number: " + myObj.features[i].attributes.Master_Incident_Number + "</td>"
+        //             + "<td> Incident Type : " + myObj.features[i].attributes.IncidentType + "</td>"
+        //             + "<td> Response Date : " + Date(myObj.features[i].attributes.ResponseDate) + "</td>"
+        //             + "<td> Last Update: " + myObj.features[i].attributes.LastUpdate + "</td> "
+        //             + "<td> Location:" + myObj.features[i].attributes.Location + "</td> "
+        //             + "<td>" + myObj.features[i].attributes.MediaMessage + "</td></tr>";
+        //         }
+
+        //         document.getElementById("demo").innerHTML = txt;
+        //     }
+        // };
+        // //xmlhttp.open("GET", "data.json", true);
+        // xmlhttp.open("GET", "2019-09-08_Fires.json", true);
+        // xmlhttp.send();
+        <?php
+                    echo "test";
+        ?>
+    </script>   
+</table>
+</div>
+</body>
+</html>
+
